@@ -1,0 +1,10 @@
+p {
+    font-family: 'Orelega One', cursive;
+    font-size: 40px;
+}
+
+hr {
+    border-color: chartreuse;
+    border-width: 3px;
+    max-width: 65px;
+}
