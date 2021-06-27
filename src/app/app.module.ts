@@ -8,7 +8,7 @@ import { FooterComponent } from './dashboard/footer/footer.component';
 import { NavbarComponent } from './dashboard/navbar/navbar.component';
 import { ListaUsuariosComponent } from './dashboard/lista-usuarios/lista-usuarios.component';
 import { LayoutComponent } from './layout/layout.component';
-import { TarjetaUsuarioComponent } from './dashboard/lista-usuarios/tarjeta-usuario/tarjeta-usuario.component'
+import { CardUsuarioComponent } from './dashboard/lista-usuarios/card-usuario/card-usuario.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { TarjetaUsuarioComponent } from './dashboard/lista-usuarios/tarjeta-usua
     NavbarComponent,
     ListaUsuariosComponent,
     LayoutComponent,
-    TarjetaUsuarioComponent
+    CardUsuarioComponent,
   ],
   imports: [
     BrowserModule,
