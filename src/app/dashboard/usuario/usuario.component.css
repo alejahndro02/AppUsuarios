@@ -1,0 +1,13 @@
+.btn-xl {
+    background-color: #1d1c1c;
+    border-color: #1d1c1c;
+    padding: 1rem 2rem;
+    border-radius: 3000px;
+    width: 100%;
+}
+
+.btn-xl:hover {
+    background-color: #070707;
+    border-color: #070707;
+    border-width: 4px;
+}
