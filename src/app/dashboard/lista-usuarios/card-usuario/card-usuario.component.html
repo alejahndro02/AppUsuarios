@@ -1,8 +1,7 @@
 <div class="card">
-    <img [src]="imgUrl" alt="imagen" class="card-img-top">
-    <div class="cad-body">
-        <h5 class="card-title text-center">Pingüino</h5>
-        <p class="card-text text-center">mail@mail.com</p>
-        <button class="btn btn-primary btn-xl">VER</button>
+    <div class="card-body">
+        <h5 class="card-title text-center">{{firstName}}</h5>
+        <p class="card-text text-center">{{email}}</p>
+        <button class="btn btn-primary btn-xl" routerLink="ususario/{{id}}">VER</button>
     </div>
 </div>
