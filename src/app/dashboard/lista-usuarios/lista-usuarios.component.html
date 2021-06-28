@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-lg-3">
-        <app-card-usuario></app-card-usuario>
+    <div *ngFor="let usuario of listUsuarios" class="col-lg-3">
+        <app-card-usuario [user]="usuario"></app-card-usuario>
     </div>
 </div>
