@@ -7,6 +7,7 @@ import { UsuarioService } from '../../services/usuario.service'
   styleUrls: ['./lista-usuarios.component.css']
 })
 export class ListaUsuariosComponent implements OnInit {
+  listUsuarios: any[]=[];
 
   constructor(private usuarioService : UsuarioService) { }
 
@@ -16,6 +17,7 @@ export class ListaUsuariosComponent implements OnInit {
 getUsuarios(){
   this.usuarioService.getUsuarios().subscribe(data => {
     console.log(data);
+    this.listUsuarios = data.data
     
   })
 }
