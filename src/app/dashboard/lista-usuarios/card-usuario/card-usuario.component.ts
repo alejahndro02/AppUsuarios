@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-usuario',
@@ -6,11 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-usuario.component.css']
 })
 export class CardUsuarioComponent implements OnInit {
-  imgUrl = 'https://cdn.pixabay.com/photo/2020/06/01/10/02/puffin-5246026_960_720.jpg';
+  @Input () user: any
+  firstName: string;
+  email:string;
+  id: number;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.firstName = this.user.name;
+    this.email = this.user.email;
+    this.id = this.user.id;
   }
 
 }
