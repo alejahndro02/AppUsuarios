@@ -11,6 +11,7 @@ import { ListaUsuariosComponent } from './dashboard/lista-usuarios/lista-usuario
 import { LayoutComponent } from './layout/layout.component';
 import { CardUsuarioComponent } from './dashboard/lista-usuarios/card-usuario/card-usuario.component';
 import { UsuarioComponent } from './dashboard/usuario/usuario.component';
+import { LoadingComponent } from './dashboard/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { UsuarioComponent } from './dashboard/usuario/usuario.component';
     LayoutComponent,
     CardUsuarioComponent,
     UsuarioComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
