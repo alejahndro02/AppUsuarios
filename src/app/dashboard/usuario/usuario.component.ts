@@ -13,6 +13,7 @@ export class UsuarioComponent implements OnInit {
   email:string;
   gender:string;
   status:string;
+  loading = true;
 
   constructor(private aRoute: ActivatedRoute,
               private UsuarioService: UsuarioService) { 
@@ -28,6 +29,8 @@ export class UsuarioComponent implements OnInit {
       this.email = data.data.email;
       this.gender = data.data.gender;
       this.status = data.data.status;
+      this.loading = false;
+
     })
   }
 }
